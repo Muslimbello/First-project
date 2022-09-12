@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(179, 62%, 43%);
+    --text-color2: hsl(218, 22%, 67%);
+    --text-color1: hsl(71, 73%, 54%);
+    --background-color: hsl(204, 43%, 93%);
+}
+
+body {
+    background-color: var(--background-color);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'karla', sans-serif;
+}
+
+.container {
+      width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+    }
+
+.upper-body {
+    background-color: #fff;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    /* justify-content: space-around; */
+    flex-direction: column;
+}
+
+.header-text{
+    color: var(--primary-color);
+}
+.guarantee{
+    color: var(--text-color1);
+    padding: 40px 0 30px 0;
+}
+.paragraph{
+    color: #888;
+}
+.lower-body {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    color: #fff;
+    }
+
+.left-part {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.dollar {
+    display: flex;
+    padding: 20px 0 20px 0;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+}
+.month{
+    opacity: 0.3;
+}
+.sign-up {
+    padding: 20px 0 0 0;
+}
+
+button {
+    width: 80%;
+    border-radius: 5px;
+    color: #fff;
+    height: 30px;
+    background-color: var(--text-color1);
+    border: none;
+
+
+}
+
+.right-part {
+    width: 50%;
+    background-color: rgb(255, 255, 255,0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+ .p-tag{
+    padding-top: 20px;
+}
+@media(max-width:667px){
+     body{
+      font-size:10px;
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+        height: 80vh;
+    }
+    .upper-body{
+        padding: 10px;
+    }
+    .guarantee{
+        padding: 10px 0 10px 0;
+    }
+    .lower-body{
+            display: block;
+            padding: 0;
+            }
+            .left-part{
+                width: 100%;
+                  padding: 10px;
+                  margin: 10px;
+                  height: 45%;
+            }
+    .right-part{
+                width: 100%;
+                height: 55%;
+            margin: 0;
+        }
+    .dollar{
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+    }
+}
+@media(max-width:350px){
+    body{
+        font-size: 9px;
+        }
+}
